@@ -1,5 +1,7 @@
 package cn.zhp;
 
+import java.util.*;
+
 /**
  * ClassName: ${NAME}
  * Package: cn.zhp
@@ -12,14 +14,34 @@ package cn.zhp;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        Boolean A=false;
+        List<Integer> list1=new ArrayList<>();
+        List<Integer> list2=new LinkedList<>();
+        Set<Integer> set=new HashSet<>();
+        Set<Integer> treeSet=new TreeSet<>();
+        treeSet.add(7);
+        treeSet.add(3);
+        treeSet.add(5);
+        treeSet.add(4);
+        treeSet.stream().sorted();
+        //System.out.println(treeSet);
+        Map<Integer,Integer> hashMap=new HashMap<>();
+        Map<Integer,Integer> treeMap=new TreeMap<>();
+        treeMap.put(1,2);
+        treeMap.put(2,2);
+        treeMap.put(8,3);
+        treeMap.put(3,7);
+        for(Integer a:treeMap.keySet()){
+            System.out.println(treeMap.get(a));
         }
+
+        Stack<Integer> stack=new Stack<>();
+        Queue<Integer> queue=new PriorityQueue<>();
+
+        PriorityQueue<Integer> minHeap=new PriorityQueue<>();
+        PriorityQueue<Integer> maxHeap=new PriorityQueue<>(Collections.reverseOrder());
+
+
     }
+
 }
