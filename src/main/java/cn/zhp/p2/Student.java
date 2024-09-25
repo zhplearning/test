@@ -13,13 +13,13 @@ import cn.zhp.p1.Person;
  */
 public class Student extends Person {
 
-    public Student(String name, int age){
-        super(name,age);
-    }
+//    public Student(String name, int age){
+//        super(name,age);
+//    }
 
     @Override
     public void print(){
-        System.out.println("Student's name:"+name+",Student's age:"+age);
+        System.out.println("Student's name:"+getName()+",Student's age:"+getAge());
     }
 
 }

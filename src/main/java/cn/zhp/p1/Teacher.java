@@ -14,15 +14,15 @@ public class Teacher extends Person{
     public Teacher(){
         super();
     }
-    public Teacher(String name, int age) {
-        super(name,age);
-        //this.name=name;
-        //this.age=age;
-
-    }
+//    public Teacher(String name, int age) {
+//        super(name,age);
+//        //this.name=name;
+//        //this.age=age;
+//
+//    }
 
     @Override
     public void print(){
-        System.out.println("Teacher's name:"+name+",Teacher 's age:"+age);
+        System.out.println("Teacher's name:"+getName()+",Teacher 's age:"+getAge());
     }
 }

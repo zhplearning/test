@@ -12,9 +12,9 @@ package cn.zhp.p1;
 class Test1 {
     public static void main(String[] args){
         Person p1=new Teacher();
-        Person p2=new Teacher("zhangsan",23);
+        //Person p2=new Teacher("zhangsan",23);
         p1.print();
-        p2.print();
+        //p2.print();
 
     }
 }

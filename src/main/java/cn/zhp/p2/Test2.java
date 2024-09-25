@@ -13,8 +13,8 @@ import cn.zhp.p1.Person;
  */
 public class Test2 {
     public static void main(String[] args){
-        Person p=new Student("lisi",27);
-        p.print();
+        //Person p=new Student("lisi",27);
+        //p.print();
 
     }
 }
